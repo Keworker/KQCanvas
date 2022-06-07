@@ -32,7 +32,6 @@ public class KQCanvas extends View {
     protected KeworkerPath curPath;
     protected Sticker curSticker;
     protected short stickNumb;
-    private String commands;
     private Bitmap fromServer;
     private boolean frozen;
 
@@ -40,7 +39,6 @@ public class KQCanvas extends View {
         super(context, attributeSet);
         frozen = false;
         this.context = context;
-        commands = "";
         bitmapPaint = new Paint(Paint.DITHER_FLAG);
         bitmapEraser = new Paint(Paint.DITHER_FLAG);
         paint = new Paint();
